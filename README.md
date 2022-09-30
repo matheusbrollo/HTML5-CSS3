@@ -2,4 +2,4 @@
  Curso de HTML5 e CSS3 do CursoemVideo
 
 
-Aprendendo a Gerenciar repositórios
+Aprendendo a Gerenciar repositórios.

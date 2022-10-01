@@ -8,17 +8,29 @@
     <style>
         body {
             height: 100vh;
+            /*
             background-color: black;
             background-image: url('img/wallpaper002.jpg');
             background-position: center top;
             background-repeat: no-repeat;
             background-size: auto;
             background-size: cover;
+            background-attachment: fixed;
+            */
+
+            background: black url('img/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+
+            /*
+            SHORTHAND
+            background: color > image > position > repeat > (size - NOTWORKING) > attachment
+            */
+
         }
         
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -29,7 +41,8 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus animi facere impedit beatae facilis est, tempore porro consequatur corrupti possimus quod eius ratione asperiores quia voluptates a deserunt rem quisquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dicta magni reiciendis incidunt accusamus cumque laboriosam dolorem sit a iste. Tenetur voluptatem officia quod nulla odio a ad perferendis vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nulla corporis architecto id, earum labore eos? Minima nisi culpa temporibus! Quaerat maxime velit libero dicta expedita perspiciatis, modi aperiam dignissimos!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus animi facere impedit beatae facilis est, tempore porro consequatur corrupti possimus quod eius ratione asperiores quia voluptates a deserunt rem quisquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dicta magni reiciendis incidunt accusamus cumque laboriosam dolorem sit a iste. Tenetur voluptatem officia quod nulla odio a ad perferendis vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nulla corporis architecto id, earum labore eos? Minima nisi culpa temporibus! Quaerat maxime velit libero dicta expedita perspiciatis, modi aperiam dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni necessitatibus similique beatae fuga deleniti inventore, dolorem alias perferendis quibusdam tenetur sunt dolores asperiores? Quibusdam, eligendi amet ab aperiam cum quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque laborum dolore ullam delectus eligendi facere reiciendis vitae, quos nemo perferendis vero a odio similique quae explicabo reprehenderit esse officiis totam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius repellat itaque iure. Facere amet ratione iusto, nihil velit, ea vero ex ipsa consequuntur a non repudiandae culpa ullam fugit sapiente.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptatum eum beatae nostrum eos laboriosam eveniet rerum quibusdam, adipisci dolorum eligendi. Esse expedita odio soluta officia eveniet, perferendis et natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tempore libero nesciunt dolore facilis a, culpa, sequi cupiditate reiciendis praesentium corrupti ut? Cum voluptate rerum temporibus consectetur praesentium officia cumque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, deserunt deleniti voluptatem iure veniam cumque eaque praesentium excepturi at recusandae, saepe illum delectus magnam voluptatum sint quisquam in illo temporibus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae ex maxime repellat commodi, voluptates aut maiores nesciunt ullam natus hic? Dolores, quis minus reprehenderit doloribus fugiat corporis quo eos. Blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure illum cum laudantium, est nulla recusandae doloribus pariatur deserunt quae perspiciatis fugiat enim error! Voluptatum, culpa numquam earum non fuga ad?</p>
     </main>
 </body>
 </html>

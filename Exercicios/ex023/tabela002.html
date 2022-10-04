@@ -14,6 +14,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -21,9 +22,26 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead {
             background-color: gray;
             color: white;
+        }
+        
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
         tfoot {
@@ -49,11 +67,12 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -77,14 +96,105 @@
                 <td>Bahia</td>
                 <td>14 016 906</td>
             </tr>
+            <tr>
+                <td class="position">5</td>
+                <td>Paraná</td>
+                <td>11 597 484</td>
+            </tr>
+            <tr>
+                <td class="position">6</td>
+                <td>Rio Grande do Sul</td>
+                <td>11 466 630	</td>
+            </tr>
+            <tr>
+                <td class="position">7</td>
+                <td>Pernambuco</td>
+                <td>9 674 793</td>
+            </tr>
+            <tr>
+                <td class="position">8</td>
+                <td>Ceará</td>
+                <td>9 240 580</td>
+            </tr>
+            <tr>
+                <td class="position">9</td>
+                <td>Pará</td>
+                <td>8 777 124</td>
+            </tr>
+            <tr>
+                <td class="position">10</td>
+                <td>Santa Catarina</td>
+                <td>7 338 473</td>
+            </tr>
+            <tr>
+                <td class="position">11</td>
+                <td>Goiás</td>
+                <td>7 206 589</td>
+            </tr>
+            <tr>
+                <td class="position">12</td>
+                <td>Maranhão</td>
+                <td>7 153 262</td>
+            </tr>
+            <tr>
+                <td class="position">13</td>
+                <td>Amazonas</td>
+                <td>4 269 995</td>
+            </tr>
+            <tr>
+                <td class="position">14</td>
+                <td>Espírito Santo</td>
+                <td>4 108 508</td>
+            </tr>
+            <tr>
+                <td class="position">15</td>
+                <td>Paraíba</td>
+                <td>4 059 905</td>
+            </tr>
+            <tr>
+                <td class="position">16</td>
+                <td>Mato Grosso</td>
+                <td>3 567 234</td>
+            </tr>
+            <tr>
+                <td class="position">17</td>
+                <td>Rio Grande do Norte</td>
+                <td>3 560 903</td>
+            </tr>
+            <tr>
+                <td class="position">18</td>
+                <td>Alagoas</td>
+                <td>3 365 351</td>
+            </tr>
+            <tr>
+                <td class="position">19</td>
+                <td>Piauí</td>
+                <td>3 289 290</td>
+            </tr>
+            <tr>
+                <td class="position">20</td>
+                <td>Distrito Federal</td>
+                <td>3 094 325</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
                 <th></th>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>90 866 364</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae saepe dolore iure ad, earum tempora eligendi debitis. Consequuntur reprehenderit vitae quaerat ipsa, dicta rem inventore nemo pariatur repellat ea ad? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur nobis saepe error autem maxime incidunt cumque facere officiis at, corporis culpa ducimus. Illo vel, neque cumque est nam mollitia perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde voluptatem accusantium quas rerum illo eaque, repellendus reprehenderit explicabo ratione? Optio ea eos incidunt praesentium accusantium aliquid voluptates fuga officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rem non rerum. Sint dolorem suscipit ducimus dolor, quasi rerum ipsa, numquam expedita, laborum optio quo praesentium porro dolorum ipsam. Fugit?</p>
+    
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae saepe dolore iure ad, earum tempora eligendi debitis. Consequuntur reprehenderit vitae quaerat ipsa, dicta rem inventore nemo pariatur repellat ea ad? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur nobis saepe error autem maxime incidunt cumque facere officiis at, corporis culpa ducimus. Illo vel, neque cumque est nam mollitia perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde voluptatem accusantium quas rerum illo eaque, repellendus reprehenderit explicabo ratione? Optio ea eos incidunt praesentium accusantium aliquid voluptates fuga officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rem non rerum. Sint dolorem suscipit ducimus dolor, quasi rerum ipsa, numquam expedita, laborum optio quo praesentium porro dolorum ipsam. Fugit?</p>
+   
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae saepe dolore iure ad, earum tempora eligendi debitis. Consequuntur reprehenderit vitae quaerat ipsa, dicta rem inventore nemo pariatur repellat ea ad? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur nobis saepe error autem maxime incidunt cumque facere officiis at, corporis culpa ducimus. Illo vel, neque cumque est nam mollitia perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde voluptatem accusantium quas rerum illo eaque, repellendus reprehenderit explicabo ratione? Optio ea eos incidunt praesentium accusantium aliquid voluptates fuga officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rem non rerum. Sint dolorem suscipit ducimus dolor, quasi rerum ipsa, numquam expedita, laborum optio quo praesentium porro dolorum ipsam. Fugit?</p>
+    
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae saepe dolore iure ad, earum tempora eligendi debitis. Consequuntur reprehenderit vitae quaerat ipsa, dicta rem inventore nemo pariatur repellat ea ad? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur nobis saepe error autem maxime incidunt cumque facere officiis at, corporis culpa ducimus. Illo vel, neque cumque est nam mollitia perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde voluptatem accusantium quas rerum illo eaque, repellendus reprehenderit explicabo ratione? Optio ea eos incidunt praesentium accusantium aliquid voluptates fuga officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rem non rerum. Sint dolorem suscipit ducimus dolor, quasi rerum ipsa, numquam expedita, laborum optio quo praesentium porro dolorum ipsam. Fugit?</p>
+    
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae saepe dolore iure ad, earum tempora eligendi debitis. Consequuntur reprehenderit vitae quaerat ipsa, dicta rem inventore nemo pariatur repellat ea ad? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur nobis saepe error autem maxime incidunt cumque facere officiis at, corporis culpa ducimus. Illo vel, neque cumque est nam mollitia perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde voluptatem accusantium quas rerum illo eaque, repellendus reprehenderit explicabo ratione? Optio ea eos incidunt praesentium accusantium aliquid voluptates fuga officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rem non rerum. Sint dolorem suscipit ducimus dolor, quasi rerum ipsa, numquam expedita, laborum optio quo praesentium porro dolorum ipsam. Fugit?</p>
+    
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae saepe dolore iure ad, earum tempora eligendi debitis. Consequuntur reprehenderit vitae quaerat ipsa, dicta rem inventore nemo pariatur repellat ea ad? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur nobis saepe error autem maxime incidunt cumque facere officiis at, corporis culpa ducimus. Illo vel, neque cumque est nam mollitia perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde voluptatem accusantium quas rerum illo eaque, repellendus reprehenderit explicabo ratione? Optio ea eos incidunt praesentium accusantium aliquid voluptates fuga officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rem non rerum. Sint dolorem suscipit ducimus dolor, quasi rerum ipsa, numquam expedita, laborum optio quo praesentium porro dolorum ipsam. Fugit?</p>
 </body>
 </html>

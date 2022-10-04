@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+.content-title {
+    margin: 0;
+    font-size: 40px;
+    color: #333333;
+}
+
+.content-description {
+    max-width: 800px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+}
+
+.infocard {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.infocard-image {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center bottom;
+    margin-right: 80px;
+}
+
+.infocard-title {
+    margin: 0px 0px 12px 0px;
+    font-size: 30px;
+    text-align: left;
+    color: #c4c4c4;
+}
+
+.infocard-description {
+    margin: 0px 0px 24px 0px;
+    max-width: 400px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    color: #333333;
+}
+
+.infocard-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: coral;
+}
+
+.infocard-button:hover {
+    background-color: rgb(255, 68, 0);
+    transition: 0.2s linear;
+}
+
+@media (max-width: 576px) {
+    .content-title {
+        margin-bottom: 32px;
+        font-size: 32px;
+    }
+
+    .content-description {
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 992px) {
+    .infocard {
+        flex-direction: column;
+    }
+
+    .infocard-image {
+        margin: 0 0 32px;
+    }
+}
